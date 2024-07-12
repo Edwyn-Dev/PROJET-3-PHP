@@ -11,7 +11,9 @@ if (isset($_SESSION['error'])) {
 }
 ?>
 <form action="traitement_connexion.php" method="post">
+<label for="identifiant">Nom ou Email</label>
     <input type="text" id="identifiant" name="identifiant" placeholder="Nom d'utilisateur ou Email" required><br>
+    <label for="identifiant">Mot de passe</label>
     <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Mot de passe" required><br>
     <input type="submit" value="Se connecter">
 </form>
